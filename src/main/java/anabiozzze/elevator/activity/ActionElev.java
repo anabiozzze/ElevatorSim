@@ -1,7 +1,17 @@
 package anabiozzze.elevator.activity;
 
+import anabiozzze.elevator.controller.Controller;
 
 public class ActionElev {
+
+    public Controller controller = new Controller();
+
+    public ActionElev(boolean isClose) {
+        this.isClose = isClose;
+    }
+
+    public ActionElev() {
+    }
 
     protected boolean isClose = true;
 
@@ -14,16 +24,17 @@ public class ActionElev {
     }
 
     public void closeDoor(){
-        String result = (isClose==false) ? "...закрываются двери...\n" : "";
+        String result = (isClose==false) ? "...закрываются двери...\n\n" : "";
         System.out.print(result);
         isClose = true;
     }
 
-    public void alertStop(int floor){
+    public void stop(int floor){
         System.out.println("Лифт прибыл на " + floor + " этаж.");
+        controller.currentFloor = floor;
     }
 
-    public void alertStart(int floor){
+    public void start(int floor){
         System.out.println("Следующий этаж - " + floor + ".");
     }
 

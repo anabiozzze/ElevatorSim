@@ -1,36 +1,42 @@
 package anabiozzze.elevator.activity;
 
-import anabiozzze.elevator.ElevatorMain;
+import anabiozzze.elevator.Elevator;
+import anabiozzze.elevator.controller.Controller;
 
-import java.sql.SQLOutput;
 import java.util.Queue;
 
 public class MovingElev {
 
-    private static final Object lock = new Object();
     public static ActionElev action = new ActionElev();
+    public static Controller controller = new Controller();
+
+    private static final Object lock = new Object();
     public static int moveTime = 0;
 
+    public MovingElev() {
+    }
 
-    public static void start(Queue<Integer> queue) {
+    public static void start() {
 
-        if (queue.peek() == ElevatorMain.currentFloor) {
+        if (controller.queue.peek() == controller.currentFloor) {
             action.openDoor();
-            action.alertStop(queue.peek());
+            action.stop(controller.queue.peek());
 
         } else {
-            String result = (queue.peek() < ElevatorMain.currentFloor) ? "Лифт опускается." : "Лифт поднимается.";
+            String result = (controller.queue.peek() < controller.currentFloor) ? "Лифт опускается." : "Лифт поднимается.";
             System.out.println(result);
-            move(queue);
+            move(controller.queue);
 
         }
     }
 
     public static void move(Queue<Integer> queue) {
+
         action.closeDoor();
-        action.alertStart(queue.peek());
+        action.start(queue.peek());
         floorDiff(queue);
-        moveWait(ElevatorMain.getWaitTime());
+        moveWait(Elevator.getWaitTime());
+
 
         while (moveTime!=0) {
             moveWait(1);
@@ -38,13 +44,18 @@ public class MovingElev {
             System.out.println("осталось " + moveTime + " с...");
         }
 
-        action.alertStop(queue.poll());
-        moveWait(ElevatorMain.getWaitTime());
+        action.stop(queue.poll());
+
+        moveWait(Elevator.getWaitTime());
         action.openDoor();
 
         System.out.println("Ожидание посадки пассажиров.");
         moveWait(5);
         action.closeDoor();
+
+        if (queue.peek()==null) {
+            controller.input();
+        }
 
         if (queue.peek()!=null) {
             move(queue);
@@ -64,8 +75,9 @@ public class MovingElev {
 
 
     private static int floorDiff(Queue<Integer> queue){
-        int result = Math.abs(ElevatorMain.currentFloor - queue.peek());
-        moveTime = result*ElevatorMain.getSpeed();
+        int result = Math.abs(controller.currentFloor - queue.peek());
+        moveTime = result* Elevator.getSpeed();
         return result;
     }
+
 }

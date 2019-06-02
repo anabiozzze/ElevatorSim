@@ -1,16 +1,18 @@
 package anabiozzze.elevator;
 
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class Main {
+@SpringBootApplication
+public class Main implements CommandLineRunner {
 
     public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
+    }
 
-        ElevatorMain elevator = new ElevatorMain(4444, 5);
-        elevator.queue.add(7);
-        elevator.queue.add(4);
-        elevator.queue.add(1);
-
-        elevator.move(elevator.queue);
-
+    @Override
+    public void run(String... args) throws Exception {
+        Elevator elevator = new Elevator();
     }
 }
