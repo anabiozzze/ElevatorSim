@@ -1,13 +1,10 @@
 package anabiozzze.elevator;
 
-import anabiozzze.elevator.activity.MovingElev;
 import anabiozzze.elevator.controller.Controller;
 
-import java.util.LinkedList;
 import java.util.Objects;
-import java.util.Queue;
 
-public class Elevator implements ElevatorInt {
+public class Elevator  {
 
     Controller controller;
 
@@ -15,18 +12,12 @@ public class Elevator implements ElevatorInt {
     protected static final int speed = 10;
     protected static final int waitTime = 2;
 
-
+    // контроллер запускается автоматически при создании экземпляра лифта
     public Elevator() {
         id++;
         this.controller = new Controller();
         controller.input();
     }
-
-    @Override
-    public void move() {
-        MovingElev.start();
-    }
-
 
     public static int getSpeed() {
         return speed;
@@ -35,7 +26,6 @@ public class Elevator implements ElevatorInt {
     public static int getWaitTime() {
         return waitTime;
     }
-
 
 
     @Override

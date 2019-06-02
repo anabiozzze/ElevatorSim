@@ -2,20 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28d8c192-30c4-454a-a7fa-537fdf9d4ee4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorInt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/MovingElev.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/MovingElev.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/awdawdawd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/ElevatorMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/activity/ActionElev.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/activity/ActionElev.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/activity/MovingElev.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/activity/MovingElev.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/Elevator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/Elevator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/ElevatorInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/anabiozzze/elevator/controller/Controller.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,78 +40,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <element signature="e#156#157#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/MovingElev.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="900">
+              <caret line="60" column="11" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2360#2361#0" expanded="true" />
+                <element signature="e#2391#2392#0" expanded="true" />
+                <element signature="e#2443#2444#0" expanded="true" />
+                <element signature="e#2489#2490#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#866#867#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#806#807#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorInt.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="270">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+            <state relative-caret-position="585">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1192#1193#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/configure/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/ElevatorInt.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/MovingElev.java" />
         <option value="$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java" />
       </list>
@@ -296,18 +268,18 @@
       <workItem from="1559428403958" duration="613000" />
       <workItem from="1559429463936" duration="648000" />
       <workItem from="1559459557888" duration="13659000" />
-      <workItem from="1559476472530" duration="14961000" />
+      <workItem from="1559476472530" duration="17256000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30255000" />
+    <option name="totallyTimeSpent" value="32550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1923077" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1923077" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -317,8 +289,8 @@
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -381,33 +353,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        <state relative-caret-position="180">
+          <caret line="14" column="54" lean-forward="true" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/ActionElev.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="585">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/activity/MovingElev.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="900">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2360#2361#0" expanded="true" />
+            <element signature="e#2391#2392#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2489#2490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -416,22 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/Elevator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#866#867#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/anabiozzze/elevator/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
