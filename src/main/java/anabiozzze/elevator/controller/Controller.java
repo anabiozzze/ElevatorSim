@@ -1,18 +1,27 @@
 package anabiozzze.elevator.controller;
 
-import anabiozzze.elevator.activity.MovingElev;
+import anabiozzze.elevator.elevator.statemachine.MovingElev;
 
-import java.io.*;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-public class Controller {
+
+public final class Controller {
+
 
     private BufferedReader reader; // обработчик ввода новых этажей
-    public Queue<Integer> queue = new LinkedList<>(); // очередь этажей
-    public static int currentFloor = 1;
 
-    public Controller() {
+    private Controller() { }
+
+    private static Controller controller;
+
+    public static Controller getController() {
+
+        if (controller == null) {
+            controller = new Controller();
+        }
+
+        return controller;
     }
 
     // основной метод для ввода последовательности этажей, команд отмены и подтверждения
@@ -32,13 +41,13 @@ public class Controller {
                 // реакция на команды
                 if (command.equals("q")) System.exit(0);
                 if (command.equals("y")) {
-                    MovingElev.move(queue);
+                    MovingElev.getMovingElev().move();
                 }
 
                 // этажи просто добавляем в очередь
                 else {
                     int newFloor = Integer.parseInt(command);
-                    queue.add(newFloor);
+                    MovingElev.getMovingElev().queue.add(newFloor);
                     System.out.println(newFloor + " этаж добавлен в очередь");
                     input();
                 }
@@ -50,11 +59,13 @@ public class Controller {
 
             // не строка
         } catch (Exception e) {
+            e.printStackTrace();
             System.out.println("Введено неверное значение. Попробуйте еще раз.");
             input();
         }
 
-        return 0;
+        // если очередь в модели пустая - снова просим ввод, если нет - продолжаем работу
+        return (MovingElev.getMovingElev().isEmpty) ? input() : 0;
     }
 
 

@@ -1,29 +1,23 @@
-package anabiozzze.elevator;
-
-import anabiozzze.elevator.controller.Controller;
+package anabiozzze.elevator.elevator;
 
 import java.util.Objects;
 
 public class Elevator  {
 
-    Controller controller;
-
-    private static int id;
-    protected static final int speed = 10;
-    protected static final int waitTime = 2;
+    private int id;
+    protected final int speed = 10;
+    protected final int waitTime = 2;
 
     // контроллер запускается автоматически при создании экземпляра лифта
     public Elevator() {
         id++;
-        this.controller = new Controller();
-        controller.input();
     }
 
-    public static int getSpeed() {
+    public int getSpeed() {
         return speed;
     }
 
-    public static int getWaitTime() {
+    public int getWaitTime() {
         return waitTime;
     }
 
